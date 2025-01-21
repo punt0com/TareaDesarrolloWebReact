@@ -1,0 +1,47 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app__main-content {
+  flex: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+  margin: 0;
+  background-color: #fff;
+}
+
+.app__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app__main-content {
+  margin: 5%;
+  padding: 5%;
+}
