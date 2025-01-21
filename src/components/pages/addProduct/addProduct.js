@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState,useEffect  } from 'react';
 
 const AddProduct = () => {
 
@@ -24,6 +24,10 @@ const AddProduct = () => {
       "price": 20.00
     },
   ]);
+
+  useEffect(() => {
+    console.log("Base de datos actualizada:", baseDeDatos);
+  }, [baseDeDatos]);
 
   const addProductToDatabase = () => {
     if (productName && productPrice ) {
